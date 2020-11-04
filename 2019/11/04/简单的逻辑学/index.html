@@ -1,0 +1,277 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>简单的逻辑学 | ALifeBug</title><meta name="description" content="简单的逻辑学"><meta name="keywords" content="读书笔记,逻辑学"><meta name="author" content="Huang Qingshan"><meta name="copyright" content="Huang Qingshan"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="canonical" href="http://alifebug.github.io/2019/11/04/%E7%AE%80%E5%8D%95%E7%9A%84%E9%80%BB%E8%BE%91%E5%AD%A6/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="简单的逻辑学"><meta name="twitter:description" content="简单的逻辑学"><meta name="twitter:image" content="https://s2.ax1x.com/2019/11/04/Kv8O6U.jpg"><meta property="og:type" content="article"><meta property="og:title" content="简单的逻辑学"><meta property="og:url" content="http://alifebug.github.io/2019/11/04/%E7%AE%80%E5%8D%95%E7%9A%84%E9%80%BB%E8%BE%91%E5%AD%A6/"><meta property="og:site_name" content="ALifeBug"><meta property="og:description" content="简单的逻辑学"><meta property="og:image" content="https://s2.ax1x.com/2019/11/04/Kv8O6U.jpg"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="prev" title="SQL优化" href="http://alifebug.github.io/2019/11/13/SQL%E4%BC%98%E5%8C%96/"><link rel="next" title="国境以南太阳以西" href="http://alifebug.github.io/2019/10/26/%E5%9B%BD%E5%A2%83%E4%BB%A5%E5%8D%97%E5%A4%AA%E9%98%B3%E4%BB%A5%E8%A5%BF/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://xxx/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  highlight_copy: 'true',
+  highlight_lang: 'true',
+  highlight_shrink: 'false',
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: '添加书签',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  copyright: undefined,
+  copy_copyright_js: false
+  
+}</script><meta name="generator" content="Hexo 4.2.0"></head><body><div id="header"> <div id="page-header"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">ALifeBug</a></span><i class="fa fa-bars fa-fw toggle-menu pull-right close" aria-hidden="true"></i><span class="pull-right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 其他</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li></ul></div><script>document.body.addEventListener('touchstart', function(){ });</script></div></span><span class="pull-right" id="search_button"></span></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="lozad avatar_img" src="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/Photo/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'"></div><div class="mobile_post_data"><div class="mobile_data_item is_center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">22</div></a></div></div><div class="mobile_data_item is_center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">25</div></a></div></div><div class="mobile_data_item is_center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">10</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 其他</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li></ul></div><script>document.body.addEventListener('touchstart', function(){ });</script></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#简单的逻辑学"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">简单的逻辑学</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#逻辑学的基本原理"><span class="toc_mobile_items-number">1.1.</span> <span class="toc_mobile_items-text">逻辑学的基本原理</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#基本原理"><span class="toc_mobile_items-number">1.1.1.</span> <span class="toc_mobile_items-text">基本原理</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#灰色地带及人为灰色地带"><span class="toc_mobile_items-number">1.1.2.</span> <span class="toc_mobile_items-text">灰色地带及人为灰色地带</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#万物终有其根源"><span class="toc_mobile_items-number">1.1.3.</span> <span class="toc_mobile_items-text">万物终有其根源</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#对原因的探寻不要半途而废"><span class="toc_mobile_items-number">1.1.4.</span> <span class="toc_mobile_items-text">对原因的探寻不要半途而废</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#区分原因"><span class="toc_mobile_items-number">1.1.5.</span> <span class="toc_mobile_items-text">区分原因</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#定义术语"><span class="toc_mobile_items-number">1.1.6.</span> <span class="toc_mobile_items-text">定义术语</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#直言命题"><span class="toc_mobile_items-number">1.1.7.</span> <span class="toc_mobile_items-text">直言命题</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#普遍命题"><span class="toc_mobile_items-number">1.1.8.</span> <span class="toc_mobile_items-text">普遍命题</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#逻辑学的语言"><span class="toc_mobile_items-number">1.2.</span> <span class="toc_mobile_items-text">逻辑学的语言</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#建立一个论证"><span class="toc_mobile_items-number">1.2.1.</span> <span class="toc_mobile_items-text">建立一个论证</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#从全称到特称"><span class="toc_mobile_items-number">1.2.2.</span> <span class="toc_mobile_items-text">从全称到特称</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#从特称到全称"><span class="toc_mobile_items-number">1.2.3.</span> <span class="toc_mobile_items-text">从特称到全称</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#断言"><span class="toc_mobile_items-number">1.2.4.</span> <span class="toc_mobile_items-text">断言</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#否定命题"><span class="toc_mobile_items-number">1.2.5.</span> <span class="toc_mobile_items-text">否定命题</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#比较"><span class="toc_mobile_items-number">1.2.6.</span> <span class="toc_mobile_items-text">比较</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#比较和论证"><span class="toc_mobile_items-number">1.2.7.</span> <span class="toc_mobile_items-text">比较和论证</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#正确论证"><span class="toc_mobile_items-number">1.2.8.</span> <span class="toc_mobile_items-text">正确论证</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#条件论证"><span class="toc_mobile_items-number">1.2.9.</span> <span class="toc_mobile_items-text">条件论证</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#三段论"><span class="toc_mobile_items-number">1.2.10.</span> <span class="toc_mobile_items-text">三段论</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#前提的真实性"><span class="toc_mobile_items-number">1.2.11.</span> <span class="toc_mobile_items-text">前提的真实性</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#前提的相关性"><span class="toc_mobile_items-number">1.2.12.</span> <span class="toc_mobile_items-text">前提的相关性</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#事实问题，价值问题"><span class="toc_mobile_items-number">1.2.13.</span> <span class="toc_mobile_items-text">事实问题，价值问题</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#论证结构"><span class="toc_mobile_items-number">1.2.14.</span> <span class="toc_mobile_items-text">论证结构</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#结论必须反映前提的量"><span class="toc_mobile_items-number">1.2.15.</span> <span class="toc_mobile_items-text">结论必须反映前提的量</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#非逻辑思维的根源"><span class="toc_mobile_items-number">1.3.</span> <span class="toc_mobile_items-text">非逻辑思维的根源</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#怀疑论"><span class="toc_mobile_items-number">1.3.1.</span> <span class="toc_mobile_items-text">怀疑论</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#逃避性不可知论"><span class="toc_mobile_items-number">1.3.2.</span> <span class="toc_mobile_items-text">逃避性不可知论</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#玩世不恭和盲目乐观主义"><span class="toc_mobile_items-number">1.3.3.</span> <span class="toc_mobile_items-text">玩世不恭和盲目乐观主义</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#眼界狭窄"><span class="toc_mobile_items-number">1.3.4.</span> <span class="toc_mobile_items-text">眼界狭窄</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#情感和论证"><span class="toc_mobile_items-number">1.3.5.</span> <span class="toc_mobile_items-text">情感和论证</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#论证不是争吵"><span class="toc_mobile_items-number">1.3.6.</span> <span class="toc_mobile_items-text">论证不是争吵</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#真诚的局限性"><span class="toc_mobile_items-number">1.3.7.</span> <span class="toc_mobile_items-text">真诚的局限性</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#常识"><span class="toc_mobile_items-number">1.3.8.</span> <span class="toc_mobile_items-text">常识</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#非逻辑思维的主要形式"><span class="toc_mobile_items-number">1.4.</span> <span class="toc_mobile_items-text">非逻辑思维的主要形式</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#否定前件"><span class="toc_mobile_items-number">1.4.1.</span> <span class="toc_mobile_items-text">否定前件</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#肯定后件"><span class="toc_mobile_items-number">1.4.2.</span> <span class="toc_mobile_items-text">肯定后件</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#中项不周延"><span class="toc_mobile_items-number">1.4.3.</span> <span class="toc_mobile_items-text">中项不周延</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#偷换概念"><span class="toc_mobile_items-number">1.4.4.</span> <span class="toc_mobile_items-text">偷换概念</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#窃取论题"><span class="toc_mobile_items-number">1.4.5.</span> <span class="toc_mobile_items-text">窃取论题</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#虚假假设"><span class="toc_mobile_items-number">1.4.6.</span> <span class="toc_mobile_items-text">虚假假设</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#稻草人谬误"><span class="toc_mobile_items-number">1.4.7.</span> <span class="toc_mobile_items-text">稻草人谬误</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#误用传统"><span class="toc_mobile_items-number">1.4.8.</span> <span class="toc_mobile_items-text">误用传统</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#以暴易暴"><span class="toc_mobile_items-number">1.4.9.</span> <span class="toc_mobile_items-text">以暴易暴</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#民主谬误"><span class="toc_mobile_items-number">1.4.10.</span> <span class="toc_mobile_items-text">民主谬误</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#对人不对事"><span class="toc_mobile_items-number">1.4.11.</span> <span class="toc_mobile_items-text">对人不对事</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#压制理性"><span class="toc_mobile_items-number">1.4.12.</span> <span class="toc_mobile_items-text">压制理性</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#滥用专家意见"><span class="toc_mobile_items-number">1.4.13.</span> <span class="toc_mobile_items-text">滥用专家意见</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#质的量化"><span class="toc_mobile_items-number">1.4.14.</span> <span class="toc_mobile_items-text">质的量化</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#以出身论英雄"><span class="toc_mobile_items-number">1.4.15.</span> <span class="toc_mobile_items-text">以出身论英雄</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#止于分析"><span class="toc_mobile_items-number">1.4.16.</span> <span class="toc_mobile_items-text">止于分析</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#简化主义"><span class="toc_mobile_items-number">1.4.17.</span> <span class="toc_mobile_items-text">简化主义</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#分类错误"><span class="toc_mobile_items-number">1.4.18.</span> <span class="toc_mobile_items-text">分类错误</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#混淆视听"><span class="toc_mobile_items-number">1.4.19.</span> <span class="toc_mobile_items-text">混淆视听</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#以笑饰非"><span class="toc_mobile_items-number">1.4.20.</span> <span class="toc_mobile_items-text">以笑饰非</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#以泪掩过"><span class="toc_mobile_items-number">1.4.21.</span> <span class="toc_mobile_items-text">以泪掩过</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#无力反驳不算证明"><span class="toc_mobile_items-number">1.4.22.</span> <span class="toc_mobile_items-text">无力反驳不算证明</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#两难陷阱"><span class="toc_mobile_items-number">1.4.23.</span> <span class="toc_mobile_items-text">两难陷阱</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#以先后论因果"><span class="toc_mobile_items-number">1.4.24.</span> <span class="toc_mobile_items-text">以先后论因果</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#情感误导"><span class="toc_mobile_items-number">1.4.25.</span> <span class="toc_mobile_items-text">情感误导</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#功利误导"><span class="toc_mobile_items-number">1.4.26.</span> <span class="toc_mobile_items-text">功利误导</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#避免结论"><span class="toc_mobile_items-number">1.4.27.</span> <span class="toc_mobile_items-text">避免结论</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#简化推理"><span class="toc_mobile_items-number">1.4.28.</span> <span class="toc_mobile_items-text">简化推理</span></a></li></ol></li></ol></li></ol></div></div><div id="body-wrap"><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#简单的逻辑学"><span class="toc-number">1.</span> <span class="toc-text">简单的逻辑学</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#逻辑学的基本原理"><span class="toc-number">1.1.</span> <span class="toc-text">逻辑学的基本原理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#基本原理"><span class="toc-number">1.1.1.</span> <span class="toc-text">基本原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#灰色地带及人为灰色地带"><span class="toc-number">1.1.2.</span> <span class="toc-text">灰色地带及人为灰色地带</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#万物终有其根源"><span class="toc-number">1.1.3.</span> <span class="toc-text">万物终有其根源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对原因的探寻不要半途而废"><span class="toc-number">1.1.4.</span> <span class="toc-text">对原因的探寻不要半途而废</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#区分原因"><span class="toc-number">1.1.5.</span> <span class="toc-text">区分原因</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#定义术语"><span class="toc-number">1.1.6.</span> <span class="toc-text">定义术语</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#直言命题"><span class="toc-number">1.1.7.</span> <span class="toc-text">直言命题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#普遍命题"><span class="toc-number">1.1.8.</span> <span class="toc-text">普遍命题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#逻辑学的语言"><span class="toc-number">1.2.</span> <span class="toc-text">逻辑学的语言</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#建立一个论证"><span class="toc-number">1.2.1.</span> <span class="toc-text">建立一个论证</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#从全称到特称"><span class="toc-number">1.2.2.</span> <span class="toc-text">从全称到特称</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#从特称到全称"><span class="toc-number">1.2.3.</span> <span class="toc-text">从特称到全称</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#断言"><span class="toc-number">1.2.4.</span> <span class="toc-text">断言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#否定命题"><span class="toc-number">1.2.5.</span> <span class="toc-text">否定命题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#比较"><span class="toc-number">1.2.6.</span> <span class="toc-text">比较</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#比较和论证"><span class="toc-number">1.2.7.</span> <span class="toc-text">比较和论证</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正确论证"><span class="toc-number">1.2.8.</span> <span class="toc-text">正确论证</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#条件论证"><span class="toc-number">1.2.9.</span> <span class="toc-text">条件论证</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三段论"><span class="toc-number">1.2.10.</span> <span class="toc-text">三段论</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#前提的真实性"><span class="toc-number">1.2.11.</span> <span class="toc-text">前提的真实性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#前提的相关性"><span class="toc-number">1.2.12.</span> <span class="toc-text">前提的相关性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#事实问题，价值问题"><span class="toc-number">1.2.13.</span> <span class="toc-text">事实问题，价值问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#论证结构"><span class="toc-number">1.2.14.</span> <span class="toc-text">论证结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#结论必须反映前提的量"><span class="toc-number">1.2.15.</span> <span class="toc-text">结论必须反映前提的量</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#非逻辑思维的根源"><span class="toc-number">1.3.</span> <span class="toc-text">非逻辑思维的根源</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#怀疑论"><span class="toc-number">1.3.1.</span> <span class="toc-text">怀疑论</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#逃避性不可知论"><span class="toc-number">1.3.2.</span> <span class="toc-text">逃避性不可知论</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#玩世不恭和盲目乐观主义"><span class="toc-number">1.3.3.</span> <span class="toc-text">玩世不恭和盲目乐观主义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#眼界狭窄"><span class="toc-number">1.3.4.</span> <span class="toc-text">眼界狭窄</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#情感和论证"><span class="toc-number">1.3.5.</span> <span class="toc-text">情感和论证</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#论证不是争吵"><span class="toc-number">1.3.6.</span> <span class="toc-text">论证不是争吵</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#真诚的局限性"><span class="toc-number">1.3.7.</span> <span class="toc-text">真诚的局限性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常识"><span class="toc-number">1.3.8.</span> <span class="toc-text">常识</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#非逻辑思维的主要形式"><span class="toc-number">1.4.</span> <span class="toc-text">非逻辑思维的主要形式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#否定前件"><span class="toc-number">1.4.1.</span> <span class="toc-text">否定前件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#肯定后件"><span class="toc-number">1.4.2.</span> <span class="toc-text">肯定后件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#中项不周延"><span class="toc-number">1.4.3.</span> <span class="toc-text">中项不周延</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#偷换概念"><span class="toc-number">1.4.4.</span> <span class="toc-text">偷换概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#窃取论题"><span class="toc-number">1.4.5.</span> <span class="toc-text">窃取论题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#虚假假设"><span class="toc-number">1.4.6.</span> <span class="toc-text">虚假假设</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#稻草人谬误"><span class="toc-number">1.4.7.</span> <span class="toc-text">稻草人谬误</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#误用传统"><span class="toc-number">1.4.8.</span> <span class="toc-text">误用传统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#以暴易暴"><span class="toc-number">1.4.9.</span> <span class="toc-text">以暴易暴</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#民主谬误"><span class="toc-number">1.4.10.</span> <span class="toc-text">民主谬误</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对人不对事"><span class="toc-number">1.4.11.</span> <span class="toc-text">对人不对事</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#压制理性"><span class="toc-number">1.4.12.</span> <span class="toc-text">压制理性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#滥用专家意见"><span class="toc-number">1.4.13.</span> <span class="toc-text">滥用专家意见</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#质的量化"><span class="toc-number">1.4.14.</span> <span class="toc-text">质的量化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#以出身论英雄"><span class="toc-number">1.4.15.</span> <span class="toc-text">以出身论英雄</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#止于分析"><span class="toc-number">1.4.16.</span> <span class="toc-text">止于分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#简化主义"><span class="toc-number">1.4.17.</span> <span class="toc-text">简化主义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分类错误"><span class="toc-number">1.4.18.</span> <span class="toc-text">分类错误</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#混淆视听"><span class="toc-number">1.4.19.</span> <span class="toc-text">混淆视听</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#以笑饰非"><span class="toc-number">1.4.20.</span> <span class="toc-text">以笑饰非</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#以泪掩过"><span class="toc-number">1.4.21.</span> <span class="toc-text">以泪掩过</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#无力反驳不算证明"><span class="toc-number">1.4.22.</span> <span class="toc-text">无力反驳不算证明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#两难陷阱"><span class="toc-number">1.4.23.</span> <span class="toc-text">两难陷阱</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#以先后论因果"><span class="toc-number">1.4.24.</span> <span class="toc-text">以先后论因果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#情感误导"><span class="toc-number">1.4.25.</span> <span class="toc-text">情感误导</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#功利误导"><span class="toc-number">1.4.26.</span> <span class="toc-text">功利误导</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#避免结论"><span class="toc-number">1.4.27.</span> <span class="toc-text">避免结论</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#简化推理"><span class="toc-number">1.4.28.</span> <span class="toc-text">简化推理</span></a></li></ol></li></ol></li></ol></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://s2.ax1x.com/2019/11/04/Kv8O6U.jpg)"><div id="post-info"><div id="post-title"><div class="posttitle">简单的逻辑学</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 发表于 2019-11-04<span class="post-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i> 更新于 2020-04-02</time><span class="post-meta__separator mobile_hidden">|</span><span class="mobile_hidden"><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a></span><div class="post-meta-wordcount"><span>阅读量: </span><span id="busuanzi_value_page_pv"></span></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><h1 id="简单的逻辑学"><a href="#简单的逻辑学" class="headerlink" title="简单的逻辑学"></a>简单的逻辑学</h1><h2 id="逻辑学的基本原理"><a href="#逻辑学的基本原理" class="headerlink" title="逻辑学的基本原理"></a>逻辑学的基本原理</h2><h3 id="基本原理"><a href="#基本原理" class="headerlink" title="基本原理"></a>基本原理</h3><ul>
+<li><strong>同一律</strong>：事物只能是其本身。</li>
+<li><strong>排中律</strong>：对于任何事物在一定条件下的判断都要有明确的“是”或“非”,不存在中间状态。从绝对意义上来说，没有正在变化的事物，从无到有之间没有通道。</li>
+<li><strong>充足理由律</strong>：任何事物都有其存在的充足理由。也可以成为因果原理，体现的内容是宇宙万物的存在都有其充足根据。</li>
+<li><strong>矛盾律</strong>：在同一时刻，某个事物不可能在同一方面既是这样又不是这样。</li>
+<li>基本原理是不证自明的，是不能被证明的。基本原理反映的是绝对基础的事实，是人类意识行动的首要基础。如果人们认为科学的基本原理需要证明而不能直接被接受的话，科学就不会前行，将永远留在原地。</li>
+</ul>
+<h3 id="灰色地带及人为灰色地带"><a href="#灰色地带及人为灰色地带" class="headerlink" title="灰色地带及人为灰色地带"></a>灰色地带及人为灰色地带</h3><ul>
+<li>灰色地带之所以存在，是因为事物有时候并不是黑白分明的。你常常会发现自己所处的境地不属于绝对意义上的黑或者白，它们没有明确的对立面。这仅仅说明你没有看清楚它们。不要将你主观上的某个灰色观念无限放大到包括整个世界，并且认为这就是世界的本来面貌。</li>
+</ul>
+<h3 id="万物终有其根源"><a href="#万物终有其根源" class="headerlink" title="万物终有其根源"></a>万物终有其根源</h3><ul>
+<li>每一个原因与其结果之间必然存在根本的相似之处。所谓原因，它必能导致我们所观察到的结果，并将在结果上留下其特定的印记；每一个结果，在一定程度上，都将反映出其根源的特性。</li>
+</ul>
+<h3 id="对原因的探寻不要半途而废"><a href="#对原因的探寻不要半途而废" class="headerlink" title="对原因的探寻不要半途而废"></a>对原因的探寻不要半途而废</h3><ul>
+<li>有时我们不能发现问题的根源，仅仅是因为我们懒惰，没有充分研究；有时则是耐心不够在作怪。对于要做的事情，我们总想着用最快的、一劳永逸的办法来解决。</li>
+</ul>
+<h3 id="区分原因"><a href="#区分原因" class="headerlink" title="区分原因"></a>区分原因</h3><ul>
+<li>动力因(做一件事的行动)，质料因(这件事情的组成)，目的因(为什么要做这件事)，形式因(这件事和其他事情的区别)。</li>
+<li>在动力因中，我们要区别主要原因和工具原因。工具，是主要原因要得到某种结果所使用的媒介。如果我们太关注工具原因并夸大它的重要性，有些事情就容易被忽略。</li>
+</ul>
+<h3 id="定义术语"><a href="#定义术语" class="headerlink" title="定义术语"></a>定义术语</h3><ul>
+<li>在逻辑论述中，避免语义不清和模棱两可最有效的方法就是定义术语。</li>
+<li>逻辑上定义术语的过程分为两步：第一步，将要定义的术语放入最相近的类别当中；第二步，确定其与同类中其他事物的不同特性。</li>
+</ul>
+<h3 id="直言命题"><a href="#直言命题" class="headerlink" title="直言命题"></a>直言命题</h3><ul>
+<li>最有效的论证，其结论都是直言命题，清楚明确的告诉我们事物的真相是什么。如“收音机在汽车后座上”。</li>
+<li>一个命题可能在形式上是直言命题，但实际上它所表达的内容仍然可能不对。一个人可能会说：“芝加哥棒球队是最好的棒球队。”这是一个直言命题，但它告诉我们的只是讲话者坚定的信念。</li>
+</ul>
+<h3 id="普遍命题"><a href="#普遍命题" class="headerlink" title="普遍命题"></a>普遍命题</h3><ul>
+<li>一个普遍命题涵盖的对象非常广，但它并不必然就是不精确的。“马是脊椎动物”和“马是家畜”都是普遍命题，而且没有什么理由怀疑这些命题的正确性。使一个普遍命题成立要满足以下条件：(1)它所陈述的事物是真实的；(2)适用于整个类别。</li>
+<li>普遍命题有两种形式：全称命题和特称命题。</li>
+</ul>
+<h2 id="逻辑学的语言"><a href="#逻辑学的语言" class="headerlink" title="逻辑学的语言"></a>逻辑学的语言</h2><h3 id="建立一个论证"><a href="#建立一个论证" class="headerlink" title="建立一个论证"></a>建立一个论证</h3><ul>
+<li>每个论证都由两个基本要素组成——两个不同类型的命题:一个“前提”和一个“结论”。</li>
+<li>从一个论证出发得出多个结论极为少见，实际上，这种情况也要尽量避免。单一确定的结论总是最好的。这只是换句话来说明，最有效的论证总是试着得出最简洁明了的结论。</li>
+<li>常见的逻辑指示词包括“因为”，“既然”，“由于”，而对结论来说，常见的逻辑指示词包括“因此”，“所以”，“从而”。</li>
+<li>一个正确论证的第一步，就是要确认前提的正确性。</li>
+</ul>
+<h3 id="从全称到特称"><a href="#从全称到特称" class="headerlink" title="从全称到特称"></a>从全称到特称</h3><ul>
+<li>如果我们知道某个结论是对整个类别成立的，那么它必然对这个类别中的任何部分都成立。</li>
+</ul>
+<h3 id="从特称到全称"><a href="#从特称到全称" class="headerlink" title="从特称到全称"></a>从特称到全称</h3><ul>
+<li>在特称前提和全称结论之间存在合理的通道吗？答案是肯定的，只要我们能够保证结论包含的范围完全落在前提的范围之内。在不能作出确定的结论时，我们可以作出可能的结论。换句话说，这个从特称到全称的过程，必须是谨慎的。</li>
+<li>仅仅因为某些特征适合于整体的某个部分，就声称这些特征也必然适合于整体，这是明显的谬误。但是这种谬误人们常常避免不了，所以在面临类似的情况时应加倍小心。以偏概全是人类的某种天性，尽管这并不是什么好事。</li>
+</ul>
+<h3 id="断言"><a href="#断言" class="headerlink" title="断言"></a>断言</h3><ul>
+<li>从语法上看，每个命题都包括一个主项和一个谓项。主项，是我们所要言说的对象，而谓项，则是我们对此对象所说的一切。断言是将谓项附着于主项的观念联结过程。“莱瑞尔是经理助理”，在这个命题中，经理助理是莱瑞尔的谓项。</li>
+</ul>
+<h3 id="否定命题"><a href="#否定命题" class="headerlink" title="否定命题"></a>否定命题</h3><ul>
+<li>全称性否定命题完全隔断观念之间的联结(“没有一个哲学家是永远正确的”)；特称性否定命题则是部分隔断(“一些纽约居民不读狄更斯的作品”)。</li>
+</ul>
+<h3 id="比较"><a href="#比较" class="headerlink" title="比较"></a>比较</h3><ul>
+<li>当我们比较两个事物时就会发现它们或者完全相似，或者截然不同，或者部分相似。</li>
+<li>要对比任何两个事物，特别是庞大复杂的事物，像历史事件之类，要谨记不能仅仅因为在比较时我们注意到了很多相似之处，就鲁莽的得出“这两个事件很相似”的结论。问题的关键并不是相似特征的多少，起决定作用的是这些相似特征的重要性。如果一个性质揭示了事物的本质，那么它就是重要的，它揭示了事物本身的特性。</li>
+<li>如果一个主要特性被遗漏，那么即使有大量相似的其他特性，也不能作出可靠的比较结论。</li>
+</ul>
+<h3 id="比较和论证"><a href="#比较和论证" class="headerlink" title="比较和论证"></a>比较和论证</h3><ul>
+<li>类比论证的基本结构如下：在比较的两个事物中，对于其中一个A，我有比B更深入的了解。我所做的推理的目的是：在已知A、B有足够多毋庸置疑的相同特性的基础上，使你相信他们的一些非显性的特性也是相同的。</li>
+<li>类比论证只适用于当我们不能直接证明B具有特性Z的时候，当然，也可以是B还没有发生所以不能被分析的时候。</li>
+</ul>
+<h3 id="正确论证"><a href="#正确论证" class="headerlink" title="正确论证"></a>正确论证</h3><ul>
+<li>一个论证，如我们所见，有两个基本要素：前提和结论。如果一个经济学家作出了一个预测，比如，通货膨胀将在未来六个月内收缩，并且希望不经过任何解释，大家就可以接受他的观点。此时，这个预测的可信度完全取决于这个专家的权威性。因发言人的权威性而接受他的观点也不是不合理的。事实上很多时候我们都在这么做。如果某个人是某个领域的泰斗，我们都会期待他就他所从事领域的问题发表一些观点，我们相信这些观点是有益的。但是，论证提供给我们的知识的可靠性远远高于权威所能提供的。这是因为当我们领会了一个正确论证时，我们依靠自己知道了一些东西是正确的。我们知其然，也知其所以然。</li>
+<li>为了使论证正确有力，我们必须关注其事实(内容)和形式(结构)。</li>
+<li>只有结构正确的论证才能有效，换句话说，结构的合理性是论证正确的必要前提。</li>
+<li>真实性针对命题的内容，而有效性则针对命题的结构，我们称之为论证。</li>
+<li>联言论证的象征性表示为:A · B。比如“安娜是明尼苏达大学二年级的学生，主修生物学”。”·”代表的意思是“和”，表示A和B都是真的。</li>
+<li>选言论证的象征性表示为:A v B。“v”是或者，组成这个命题的两个部分是互斥的，不能同时为真，也不能同时为假。</li>
+</ul>
+<h3 id="条件论证"><a href="#条件论证" class="headerlink" title="条件论证"></a>条件论证</h3><ul>
+<li>条件论证，有时又称假言论证，是一个包含“如果…那么…”结构的论证。</li>
+<li>条件论证的要点是大前提A-&gt;B告诉我们如果A成立，那么B也必然成立。</li>
+<li>在现实生活中，严格逻辑学意义上的条件论证真的很少。</li>
+<li>条件论证的可靠与否取决于你对论证中前提与结论的了解程度及它们的联系方式。如果论证的因果关系十分脆弱，就此下结论就是草率的。条件论证时具有前瞻性的，可靠的语言来自于对过去事实的积累。</li>
+</ul>
+<h3 id="三段论"><a href="#三段论" class="headerlink" title="三段论"></a>三段论</h3><ul>
+<li>三段论推理的根据是，首先确定某一部分是属于整体的，然后得出某一部分的组成成员也是属于整体的。</li>
+</ul>
+<h3 id="前提的真实性"><a href="#前提的真实性" class="headerlink" title="前提的真实性"></a>前提的真实性</h3><ul>
+<li>从一个错误的前提出发，一个有效的论证也只能给我们带来错误的结论。</li>
+</ul>
+<h3 id="前提的相关性"><a href="#前提的相关性" class="headerlink" title="前提的相关性"></a>前提的相关性</h3><ul>
+<li>如果前提本身和结论毫不相关，即便它是正确的，也不能起到应有的作用。</li>
+</ul>
+<h3 id="事实问题，价值问题"><a href="#事实问题，价值问题" class="headerlink" title="事实问题，价值问题"></a>事实问题，价值问题</h3><ul>
+<li>以价值命题为前提的论断，永远不能像以事实为前提的论断那样，有确定的评判标准，因为价值的评估永远会受到挑战。</li>
+<li>价值判断所依附的客观事实越是广阔坚固，它本身就越可靠。</li>
+</ul>
+<h3 id="论证结构"><a href="#论证结构" class="headerlink" title="论证结构"></a>论证结构</h3><ul>
+<li>中项至少要有一次是周延的，这样才能在大项和小项之间起到联结作用，才能演绎出必然的而不是可能的结论。一个不支持中项周延性的论证结构必然是无效的。这种错误在逻辑学上有特定的名称，叫做中项不周延。</li>
+</ul>
+<h3 id="结论必须反映前提的量"><a href="#结论必须反映前提的量" class="headerlink" title="结论必须反映前提的量"></a>结论必须反映前提的量</h3><ul>
+<li>在三段论的论证中，如果前提中有一个特称命题，那么它必被反映在结论中。如果一个前提以“一些”开头，那么结论必以“一些”开头。</li>
+</ul>
+<h2 id="非逻辑思维的根源"><a href="#非逻辑思维的根源" class="headerlink" title="非逻辑思维的根源"></a>非逻辑思维的根源</h2><h3 id="怀疑论"><a href="#怀疑论" class="headerlink" title="怀疑论"></a>怀疑论</h3><ul>
+<li>我们要区分怀疑论的两种态度：一是将怀疑永久化，这是我们要极力避免的；二是在特定的情况下，将怀疑作为一种适当的、必要的态度。</li>
+<li>极端怀疑论者宣称世界上根本没有所谓的真相。这明显是自相矛盾的结论，因为如果这世界上没有真相，就无法对上述命题加以判断，由此这个结论根本就是无根之花。</li>
+<li>中度怀疑论者勉强承认这个世界上或许有真相存在，但是他坚持，即使有真相存在，人类也没有能力探知它。初看起来，和极端怀疑论者相比，这个结论似乎给了真相一席之地，但事实上并非如此。真相如果只存在于理论上，不能通过实践去检验，那它还是不存在的。</li>
+</ul>
+<h3 id="逃避性不可知论"><a href="#逃避性不可知论" class="headerlink" title="逃避性不可知论"></a>逃避性不可知论</h3><ul>
+<li>不可知论是这样一群人，他们永远宣称没有足够的证据可以对某个事件作出确定的判断。</li>
+<li>不可知论者既不否定真相的存在也不认为它可望而不可及。他们仅仅是声称人们对任何确定的事物的真相都所知甚少。</li>
+<li>逃避性不可知论者将某些可以解决的无知同样视为不可逾越的。即使在对一个事物做了长久深入的调查后，他仍旧会说“不知道”。这与你根本没有付出任何努力时所说的“我不知道”是有本质区别的。</li>
+</ul>
+<h3 id="玩世不恭和盲目乐观主义"><a href="#玩世不恭和盲目乐观主义" class="headerlink" title="玩世不恭和盲目乐观主义"></a>玩世不恭和盲目乐观主义</h3><ul>
+<li>玩世不恭者习惯在证据不足的情况下，对事物作出悲观的预计，而盲目乐观主义者则恰恰相反。</li>
+</ul>
+<h3 id="眼界狭窄"><a href="#眼界狭窄" class="headerlink" title="眼界狭窄"></a>眼界狭窄</h3><ul>
+<li>如果仅仅是限定搜寻的范围，这算不上眼界狭窄，因为限定范围是避免做无用功的实际需要。一个眼界狭窄的人，他拒绝某些选择仅仅是因为这些选择偏离了他的预先设想，所以他认为不值得去探寻。</li>
+</ul>
+<h3 id="情感和论证"><a href="#情感和论证" class="headerlink" title="情感和论证"></a>情感和论证</h3><ul>
+<li>情绪越紧张，清晰思维、冷静行动的难度就越大。一个暴怒的人不可能成为理性的模范。在辩论中，我们必须使论证远离情绪的影响。</li>
+<li>一个结论并不因为我们觉得美好就可以被接受，我们接受它是因为我们认为它是正确的，是必须接受的。</li>
+<li>永远不要直接调动人们的情感，要努力使人们自己发现真相。只有真相，才值得人们为之欢呼雀跃。</li>
+</ul>
+<h3 id="论证不是争吵"><a href="#论证不是争吵" class="headerlink" title="论证不是争吵"></a>论证不是争吵</h3><ul>
+<li>论证的目的是发现真相，争吵的目的是击败你的对手。有许多人，虽然他们愿意和你争吵，但却不愿意或者没能力和你进行论证。不要浪费时间、精力和这种人进行争论。</li>
+</ul>
+<h3 id="真诚的局限性"><a href="#真诚的局限性" class="headerlink" title="真诚的局限性"></a>真诚的局限性</h3><ul>
+<li>真诚是正确推理的必要条件，但不是充分条件。</li>
+<li>在你为自己深信不疑的某事和对手做了长时间激情四溢的辩论后，忽然发现你的对手仅仅是出于对辩论本身的偏爱，而不是出于对观点的坚持才和你针锋相对时，你又有何感受。</li>
+</ul>
+<h3 id="常识"><a href="#常识" class="headerlink" title="常识"></a>常识</h3><ul>
+<li>逻辑，生于常识，但又高于常识。</li>
+<li>常识更接近本源，服务于推理的基本原则。它是被亚里士多德定义的“理性的动物”所共享的普遍意识。</li>
+<li>当人们动脑筋工作时，逻辑是个伟大的工具。当人们进入冥想或者心不在焉时，意识不再发挥作用。因为意识不是人本身——它就像人的手脚，仅仅是个工具。</li>
+</ul>
+<h2 id="非逻辑思维的主要形式"><a href="#非逻辑思维的主要形式" class="headerlink" title="非逻辑思维的主要形式"></a>非逻辑思维的主要形式</h2><p>错误的推理形式总称为“谬误”。最基本的谬误形式有两种，形式谬误和非形式谬误。“形式谬误”，顾名思义，问题出现在形式上，或是论证结构上。“非形式谬误”，则说的是形式谬误之外的各种逻辑错误。</p>
+<p>错误推理通常以直接作用于人的情感的方式来战胜正确推理。</p>
+<h3 id="否定前件"><a href="#否定前件" class="headerlink" title="否定前件"></a>否定前件</h3><ul>
+<li>形式为A-&gt;B,-A-&gt;-B。如果A实现，则B必然实现，但是这不意味着A是可以导致B的唯一条件。如：如果路易斯在跑步，那么他在移动。路易斯没有跑步。所以，他没有移动。这是一个无效论证。</li>
+</ul>
+<h3 id="肯定后件"><a href="#肯定后件" class="headerlink" title="肯定后件"></a>肯定后件</h3><ul>
+<li>形式为A-&gt;B,B-&gt;A。如：如果路易斯在跑步，那么他在移动。路易斯在移动。所以，他在跑步。如果结论已经成立，我们不能得出特定条件就是唯一解释的结论。</li>
+</ul>
+<h3 id="中项不周延"><a href="#中项不周延" class="headerlink" title="中项不周延"></a>中项不周延</h3><ul>
+<li>三段论中，中项(出现在前提中但不出现在结论中)必须至少有一次是全称的(周延的)，因为它要有适当的范围来联结大前提和小前提。如若不然，就会产生中项不周延谬误。</li>
+<li>几个纳粹党人是凯撒俱乐部的成员。汉斯是凯撒俱乐部的成员。所以，汉斯是纳粹党人。这里的几个是特称，如果要得到结论必须是全称也就是俱乐部成员都得是纳粹党人。</li>
+</ul>
+<h3 id="偷换概念"><a href="#偷换概念" class="headerlink" title="偷换概念"></a>偷换概念</h3><ul>
+<li><p>三段论中，要使论证有效，它必须且只能有三项。但是如果论证中某个项在使用时存在多种不同的含义，错误就变得难以发现。</p>
+</li>
+<li><p>表面上看来三段论用符号表示如下：M-&gt;P,S-&gt;M，S-&gt;P。但是由于其中一个项M可以用两种不同的理解方式，那么这个论证实际上包含了四个项，因此是无效的：M-&gt;P,S-&gt;Q,S-&gt;P。</p>
+</li>
+<li><p>鬼是迷信的人所说的人死后的灵魂。他心里有鬼，所以目光闪烁。所以他心里有人死后的灵魂。“鬼”这个词包含了两个不同的含义。</p>
+</li>
+<li><p>关爱他人是利他主义的标志。唐璜是个博爱者。所以，他是个利他主义者。这里的问题出在”爱”上，这个词的含义太过模糊，太多的事情都可以归属于它。</p>
+</li>
+<li><p>一个建立在多义词基础上的前提，结论一定是不成立的。</p>
+</li>
+<li><p>如果你要公正的就某一点进行辩论，首先请给你所要辩论的观点一个明确的定义，并且在整个辩论中始终如一的坚持它。</p>
+</li>
+</ul>
+<h3 id="窃取论题"><a href="#窃取论题" class="headerlink" title="窃取论题"></a>窃取论题</h3><ul>
+<li>窃取论题谬误是一个非常致命的错误，因为它试图避过整个论证的过程。犯这种错误的论述，表面上看是一个论证，但实际上不是。</li>
+<li>这种谬误的重要标志是：把有待证明的观点当做不证自明的前提条件。</li>
+<li>因为雪莉在撒谎，所以，雪莉是个撒谎者。两个命题只是表达方式不同，没有内容上的差别。前提没有为结论提供任何实质性的证明。</li>
+<li>所有在桌边的人都刮花了脸。吉姆在桌边。所以，吉姆刮了脸。第一个命题具有所有大前提的标志，但是它的正确性是以结论的正确性为前提的。如果我不是预先知道吉姆刮了脸，那么我就不能确定所有在桌边的人都刮了脸。所以，结论所陈述的只是我们已知的事实。</li>
+<li>窃取论题谬误又叫循环论证，有时成为恶性循环。它的要点如下：首先，命题A被作为另一个命题B的前提条件；然后，过程被反过来，最初的前提A现在变为结论，而最初的结论B则变为前提。如：因为人的命运是注定的，所以他们缺乏自由的愿望。也可以说成：根据人类缺乏自由愿望的事实，所以他们的行为是被注定的。</li>
+</ul>
+<h3 id="虚假假设"><a href="#虚假假设" class="headerlink" title="虚假假设"></a>虚假假设</h3><ul>
+<li>为了推理过程的进行，我们必须假设一些事情是真的。</li>
+<li>评判假设的一个基本标准是：命题不能违反矛盾律。换句话说，它不能自相矛盾。</li>
+<li>在论证中，如果你假设你的听众在某方面具备相应的知识，但实际上他们没有，那么接受你的结论的能力将明显的降低。尽可能的少用假设。</li>
+</ul>
+<h3 id="稻草人谬误"><a href="#稻草人谬误" class="headerlink" title="稻草人谬误"></a>稻草人谬误</h3><ul>
+<li>在与他人辩论的过程中，如果你为了削弱对方的论点而故意扭曲其论证过程，那就犯了稻草人谬误。</li>
+<li>稻草人谬误不是无心之过，因为它是在有意歪曲别人的论点。</li>
+</ul>
+<h3 id="误用传统"><a href="#误用传统" class="headerlink" title="误用传统"></a>误用传统</h3><ul>
+<li>“以前事情都是这样处理”的事实并不能成为强制后来者遵循老方法的充分理由。到底采取什么方法完全取决于目前的实际情况。习惯会对我们的生活产生重大影响，如果不分析实际上是否值得就遵循习惯做事，我们就会成为习惯的奴隶。在评价给定的实践时，我们关注的焦点应该是实践本身，而不是它的历史。</li>
+<li>如果将历史悠久作为坚持传统的唯一原因是不合逻辑的，那么将历史悠久作为拒绝传统的唯一理由同样也不合逻辑。</li>
+<li>经验不会因为它背后的历史而变得一无是处。实际上，传统的生命力完全取决于它本身的价值。</li>
+</ul>
+<h3 id="以暴易暴"><a href="#以暴易暴" class="headerlink" title="以暴易暴"></a>以暴易暴</h3><ul>
+<li>先例不能为未来的行为提供有效的支持，已经完成的行为只有历史意义。在决定先例是否有借鉴意义时，我们的关注点应该是事物本身的性质。</li>
+<li>“他们先做了，所以我们应该以牙还牙。”但是，如果他们所做的是错的，我们的行为就成了一种报复，双方都是错的也不能使这种行为立刻变成对的。</li>
+</ul>
+<h3 id="民主谬误"><a href="#民主谬误" class="headerlink" title="民主谬误"></a>民主谬误</h3><ul>
+<li>民主谬误是，如果大多数人都认为命题X是正确的，那么我们可以就此得出结论说X是正确的。</li>
+<li>在情感方面，民主谬误是很有说服力的。如许多历史事件所证明的，当民众黑白不分的时候，为坚持真理而站在民众的对立面是件很艰难的事情。</li>
+</ul>
+<h3 id="对人不对事"><a href="#对人不对事" class="headerlink" title="对人不对事"></a>对人不对事</h3><ul>
+<li>在论证中，我们要关注的是论证本身，而不是作出论证的人。</li>
+<li>所谓的对人不对事，就是在与他人辩论时，通过向公众传达关于对手的与论证无关的信息，例如生活中的负面信息，以此来达到击败对手的目的。这种谬误制造者的目的是转移听众对论证的注意力，这种情形通常是由于论证者本人出于劣势。</li>
+<li>如果论证的目的仅仅是获胜，对人不对事谬误将会有效的发挥作用。</li>
+<li>它造成的结果是，你可以庆祝你战胜了对手，但这恰恰是你所没有做到的——至少在逻辑上。你的胜利并非源于观点的价值，而是源于你扰乱听众视听的能力。</li>
+</ul>
+<h3 id="压制理性"><a href="#压制理性" class="headerlink" title="压制理性"></a>压制理性</h3><ul>
+<li>人们可以因为被强迫而做一些不愿去做的事情，但是他们不能被强迫去想一些他们不愿去想的事情。真相不能以强制的方式传播。</li>
+<li>在论证中，高压政策的背后永远隐藏着危机。防民之口甚于防川。人们只有在自由思考的时候才能接受什么是真，也只有在独立判断的时候才能确定什么是真。</li>
+</ul>
+<h3 id="滥用专家意见"><a href="#滥用专家意见" class="headerlink" title="滥用专家意见"></a>滥用专家意见</h3><ul>
+<li><p>应该是论证本身，而不是专家的话占据主导地位。如果我们仅仅满足于专家的话，那么本质上就是：“不要问任何问题，按照我们的话去做”。</p>
+</li>
+<li><p>专家的主要意见，要结合他秉持这种意见的理由，只有在这种情况下，我们得到的才不仅仅是他的意见。</p>
+</li>
+<li><p>这个世界上有太多自以为是的专家。检验的标准不是他们在说什么，而是他们是如何通过论证来得到它的。</p>
+</li>
+<li><p>无需强调，一个专家只有在其已经建立威信的领域内作出的主张，才是值得我们关注的。一个仅仅因为音乐成就而闻名于世的音乐家就经济或是全球变暖问题所提的观点没有权威力量。</p>
+</li>
+</ul>
+<h3 id="质的量化"><a href="#质的量化" class="headerlink" title="质的量化"></a>质的量化</h3><ul>
+<li>从最严格的意义上讲，质量根本不可以被量化，因为如果质量可以完美的用数量来表示，那么数量和质量之间界限的基础就将消失。</li>
+<li>很多重要的事物都不能定量衡量，或许我们可以说最重要的事物都不能。例如爱、美丽、善良、公正、自由、和平等。</li>
+</ul>
+<h3 id="以出身论英雄"><a href="#以出身论英雄" class="headerlink" title="以出身论英雄"></a>以出身论英雄</h3><ul>
+<li>知道一个来源是坏的，于是认定出于这个来源的所有都一定是坏的。这并不必然成立。</li>
+<li>考虑我们所考察的人或事的出身肯定是必要的。但是我们必须走得更远。首先我们要问：彼得从哪里来？紧接着，更关键的问题是：他的品质如何？</li>
+</ul>
+<h3 id="止于分析"><a href="#止于分析" class="headerlink" title="止于分析"></a>止于分析</h3><ul>
+<li>分析的目的，并不是简单的知道事物是由哪些部分组成的，而是要弄清楚这些组成部分是如何相互联系、相互作用，最终组成一个整体的。用纯粹的数量学的术语来说，就是整体大于部分的总和。</li>
+</ul>
+<h3 id="简化主义"><a href="#简化主义" class="headerlink" title="简化主义"></a>简化主义</h3><ul>
+<li>如前所述，一个整体大于其组成部分的总和。例如，人的身体可以根据化学元素被分解，但是如果声称人的身体等同于一堆化学元素，那将是对最简单的推理的盲从，是向简化主义谬误屈服。</li>
+<li>这种谬误发生于当我们选择性地只对整体的一部分加以关注之时。例如，当我们只把精神放在一个人的缺点上，并因此认为我们已经完全了解这个人的本质时，这个谬误就正在发挥作用。</li>
+</ul>
+<h3 id="分类错误"><a href="#分类错误" class="headerlink" title="分类错误"></a>分类错误</h3><ul>
+<li>将事物归入错误的类别是因为我们最开始就没有正确认识它们，而没有正确认识的原因是我们散漫的态度。</li>
+</ul>
+<h3 id="混淆视听"><a href="#混淆视听" class="headerlink" title="混淆视听"></a>混淆视听</h3><ul>
+<li>它是故意提出一些无关的情感信息来分散对方的注意力。这种谬误有两个特点：(1)它直接诉诸情感，而不是推理；(2)它所提供的信息与所要进行的论证毫不相关。</li>
+</ul>
+<h3 id="以笑饰非"><a href="#以笑饰非" class="headerlink" title="以笑饰非"></a>以笑饰非</h3><ul>
+<li>当不能对某个论证作出合理反应时，我们会用这种策略，假装这个问题不值得严肃对待，仅仅是个可以一笑而过的问题。使人们嘲笑某个论证是反对它的强有力的途径，但是这种方式对论证本身的价值没有任何影响。</li>
+</ul>
+<h3 id="以泪掩过"><a href="#以泪掩过" class="headerlink" title="以泪掩过"></a>以泪掩过</h3><ul>
+<li>除了可以运用嘲笑策略外，我们同样可以通过博取听众同情的方式来达到同一个目的。这种谬误通过精心设计的情感爆炸来模糊论题。</li>
+<li>强烈的情感和清晰的思维是成反比的，一旦情感超过一定界限，引导论证正确进行的机会就会随之归零。</li>
+</ul>
+<h3 id="无力反驳不算证明"><a href="#无力反驳不算证明" class="headerlink" title="无力反驳不算证明"></a>无力反驳不算证明</h3><ul>
+<li>没有强有力的证据进行反对论证，并不能因此证明其为真。不能仅仅因为你不能证明我是错的，就说我的观点是对的。</li>
+</ul>
+<h3 id="两难陷阱"><a href="#两难陷阱" class="headerlink" title="两难陷阱"></a>两难陷阱</h3><ul>
+<li>当问题实际上有很多选项时，我试图说服你只有两种。这里的进退两难是假象，因为它是对真实情况的扭曲反映。</li>
+</ul>
+<h3 id="以先后论因果"><a href="#以先后论因果" class="headerlink" title="以先后论因果"></a>以先后论因果</h3><ul>
+<li>当事件A发生后，紧接着事件B也发生了，所以我们认定，A是引起B的唯一原因，A导致B。这种仅仅以发生的先后来断定因果关系的做法就是以先后论因果谬误。</li>
+</ul>
+<h3 id="情感误导"><a href="#情感误导" class="headerlink" title="情感误导"></a>情感误导</h3><ul>
+<li>当我们选择性地忽略一些与我们的信仰相抵触的重要信息时，我们就犯了情感误导谬误。这样导致的结果就是对所讨论问题的严重扭曲。</li>
+</ul>
+<h3 id="功利误导"><a href="#功利误导" class="headerlink" title="功利误导"></a>功利误导</h3><ul>
+<li>效果不能单独确定一个行为的价值。当我们仅仅注重于一个方法对想要得到的结果的作用，而不考虑其他方面时，我们就犯了功利误导谬误。</li>
+</ul>
+<h3 id="避免结论"><a href="#避免结论" class="headerlink" title="避免结论"></a>避免结论</h3><ul>
+<li>认识到有些问题目前在我们认识能力范围之外，暂时无法解决是一回事，但是接受这样的问题永远不能解决的结论则完全是另外一回事。</li>
+</ul>
+<h3 id="简化推理"><a href="#简化推理" class="headerlink" title="简化推理"></a>简化推理</h3><ul>
+<li>有些听众将其接受能力局限在自己想听的东西之上，另一些人只喜欢简单的答案，这往往是愤世嫉俗者的特点。不要告诉听众他们想听到的，要告诉他们真实的。不要对他们假言欺骗。无论现实是光明的，还是黑暗的，或者是灰色的，都要实话实说。可能听众不能立刻欣赏你的坦白，但是在经过长时间的历练之后，他们会发现，他们必须面对的只能是现实。</li>
+</ul>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Huang Qingshan</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://alifebug.github.io/2019/11/04/%E7%AE%80%E5%8D%95%E7%9A%84%E9%80%BB%E8%BE%91%E5%AD%A6/">http://alifebug.github.io/2019/11/04/%E7%AE%80%E5%8D%95%E7%9A%84%E9%80%BB%E8%BE%91%E5%AD%A6/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://ALifeBug.github.io">ALifeBug</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记    </a><a class="post-meta__tags" href="/tags/%E9%80%BB%E8%BE%91%E5%AD%A6/">逻辑学    </a></div><div class="post_share"><div class="social-share" data-image="https://s2.ax1x.com/2019/11/04/Kv8O6U.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><a class="reward-button"><i class="fa fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="lozad post-qr-code__img" src="/img/wechat.png"><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="lozad post-qr-code__img" src="/img/alipay.png"><div class="post-qr-code__desc">支付宝</div></li></ul></div></a></div><nav class="pagination_post" id="pagination"><div class="prev-post pull-left"><a href="/2019/11/13/SQL%E4%BC%98%E5%8C%96/"><img class="prev_cover lozad" data-src="https://s2.ax1x.com/2019/11/04/Kv8O6U.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="label">上一篇</div><div class="prev_info"><span>SQL优化</span></div></a></div><div class="next-post pull-right"><a href="/2019/10/26/%E5%9B%BD%E5%A2%83%E4%BB%A5%E5%8D%97%E5%A4%AA%E9%98%B3%E4%BB%A5%E8%A5%BF/"><img class="next_cover lozad" data-src="https://s2.ax1x.com/2019/11/04/Kv8O6U.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="label">下一篇</div><div class="next_info"><span>国境以南太阳以西</span></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fa fa-fw fa-thumbs-up" aria-hidden="true"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/2019/10/26/牛津通识读本：康德/" title="牛津通识读本：康德"><img class="relatedPosts_cover lozad"data-src="https://s2.ax1x.com/2019/11/04/Kv8O6U.jpg"><div class="relatedPosts_title">牛津通识读本：康德</div></a></div><div class="relatedPosts_item"><a href="/2020/04/07/飞鸟集/" title="飞鸟集"><img class="relatedPosts_cover lozad"data-src="https://s2.ax1x.com/2019/11/04/Kv8O6U.jpg"><div class="relatedPosts_title">飞鸟集</div></a></div><div class="relatedPosts_item"><a href="/2020/11/04/中国文化的深层结构/" title="中国文化的深层结构"><img class="relatedPosts_cover lozad"data-src="https://s2.ax1x.com/2019/11/04/Kv8O6U.jpg"><div class="relatedPosts_title">中国文化的深层结构</div></a></div><div class="relatedPosts_item"><a href="/2019/10/26/国境以南太阳以西/" title="国境以南太阳以西"><img class="relatedPosts_cover lozad"data-src="https://s2.ax1x.com/2019/11/04/Kv8O6U.jpg"><div class="relatedPosts_title">国境以南太阳以西</div></a></div><div class="relatedPosts_item"><a href="/2019/10/26/社会契约论/" title="社会契约论"><img class="relatedPosts_cover lozad"data-src="https://s2.ax1x.com/2019/11/04/Kv8O6U.jpg"><div class="relatedPosts_title">社会契约论</div></a></div><div class="relatedPosts_item"><a href="/2019/10/26/海边的卡夫卡/" title="海边的卡夫卡"><img class="relatedPosts_cover lozad"data-src="https://s2.ax1x.com/2019/11/04/Kv8O6U.jpg"><div class="relatedPosts_title">海边的卡夫卡</div></a></div></div><div class="clear_both"></div></div></div></div><footer><div id="footer"><div class="copyright">&copy;2018 - 2020 By Huang Qingshan</div><div class="framework-info"><span>驱动 </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换">简</a><i class="nightshift fa fa-moon-o" id="nightshift" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/nightshift.js"></script><script src="/js/tw_cn.js"></script><script>translateInitilization()
+
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@1.2.2/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script><script>const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
+</script></body></html>
